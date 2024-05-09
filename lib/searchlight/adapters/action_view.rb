@@ -5,7 +5,7 @@ require 'active_support/core_ext'
 module Searchlight
   module Adapters
     module ActionView
-
+      extend ::ActiveSupport::Concern
       include ::ActiveModel::Conversion
 
       def self.included(search_class)

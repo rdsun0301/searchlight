@@ -2,7 +2,7 @@ require "spec_helper"
 
 describe "Searchlight::Adapters::ActionView", type: :feature do
 
-  let(:view)   { ::ActionView::Base.new }
+  let(:view)   { ::ActionView::Base.new({}, {}, {}) }
   let(:search) { BookSearch.new("title_like" => "Love Among the Chickens") }
 
   before :all do
